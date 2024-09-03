@@ -2,4 +2,3 @@ node_modules
 server
 .env
 coordVerify.js
-server.js

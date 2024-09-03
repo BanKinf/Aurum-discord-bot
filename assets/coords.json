@@ -1,0 +1,200 @@
+[
+    {
+        "name": "Wither Farm",
+        "coords": [-3271, 37, -721],
+        "dimension": "nether",
+        "id": 1
+    },
+    {
+        "name": "Pumpkin Carver Converter",
+        "coords": [-269, 33, 669],
+        "dimension": "nether",
+        "id": 2 
+    },
+    {
+        "name": "Guardian Farm",
+        "coords": [189, 180, 667],
+        "dimension": "overworld",
+        "id": 3
+    },
+    {
+        "name": "Honey Farm",
+        "coords": [140, 130, -123],
+        "dimension": "nether",
+        "id": 4
+    },
+    {
+        "name": "Concret Selector",
+        "coords": [-3, 68, 9],
+        "dimension": "end",
+        "id": 5
+    },
+    {
+        "name": "Wither Roses Farm",
+        "coords": [244, 0, 0],
+        "dimension": "end",
+        "id": 6
+    },
+    {
+        "name": "Void Trading",
+        "coords": [-92, 74, 1],
+        "dimension": "end",
+        "id": 7
+    },
+    {
+        "name": "Endermand Farm",
+        "coords": [-17, 1, 257],
+        "dimension": "end",
+        "id": 8
+    },
+    {
+        "name": "Spawn Chunks",
+        "coords": [64, 267, -48],
+        "dimension": "overworld",
+        "id": 9
+    },
+    {
+        "name": "Nether Hub",
+        "coords": [0, 126, 0],
+        "dimension": "nether",
+        "id": 10
+    },
+    {
+        "name": "Shulker Farm",
+        "coords": [-11, 62, -498],
+        "dimension": "overworld",
+        "id": 11
+    },
+    {
+        "name": "Elytra Farm",
+        "coords": [-11, 62, -498],
+        "dimension": "overworld",
+        "id": 12
+    },
+    {
+        "name": "Raid Farm",
+        "coords": [-1014, 159, -1718],
+        "dimension": "overworld",
+        "id": 13
+    },
+    {
+        "name": "Bad Omen Bank",
+        "coords": [-1159, 181, -1721],
+        "dimension": "overworld",
+        "id": 14
+    },
+    {
+        "name": "Main Storage",
+        "coords": [-6005, 80, 5389],
+        "dimension": "overworld",
+        "id": 15
+    },
+    {
+        "name": "Wither Storage",
+        "coords": [-26123, 37, -5817],
+        "dimension": "overworld",
+        "id": 16
+    },
+    {
+        "name": "Raid Farm Totem Sorter",
+        "coords": [-119, 107, -213],
+        "dimension": "nether",
+        "id": 17
+    },
+    {
+        "name": "Mushroom Island",
+        "coords": [-3231, 76, -2815],
+        "dimension": "overworld",
+        "id": 18
+    },
+    {
+        "name": "Mob Farm",
+        "coords": [4177, 209, 356],
+        "dimension": "overworld",
+        "id": 19
+    },
+    {
+        "name": "Coral Farm",
+        "coords": [4850, 62, 345],
+        "dimension": "overworld",
+        "id": 20
+    },
+    {
+        "name": "Piston Perimeter",
+        "coords": [6677, 27, -63],
+        "dimension": "overworld",
+        "id": 21
+    },
+    {
+        "name": "Masscrafter",
+        "coords": [6677, 62, 526],
+        "dimension": "overworld",
+        "id": 22
+    },
+    {
+        "name": "Piglin Bartering",
+        "coords": [894, 158, 661],
+        "dimension": "nether",
+        "id": 23
+    },
+    {
+        "name": "Gold Farm",
+        "coords": [7056, 91, 4580],
+        "dimension": "overworld",
+        "id": 24
+    },
+    {
+        "name": "Maparts",
+        "coords": [5700, 92, 3900],
+        "dimension": "overworld",
+        "id": 25
+    },
+    {
+        "name": "Tree Farms",
+        "coords": [-220, 81, -1066],
+        "dimension": "overworld",
+        "id": 26
+    },
+    {
+        "name": "Wool Farm",
+        "coords": [463, 69, -556],
+        "dimension": "overworld",
+        "id": 27
+    },
+    {
+        "name": "Trading Hall",
+        "coords": [415, 62, -714],
+        "dimension": "overworld",
+        "id": 28
+    },
+    {
+        "name": "Snow Farm",
+        "coords": [349, 72, -724],
+        "dimension": "overworld",
+        "id": 29
+    },
+    {
+        "name": "Villager Breader",
+        "coords": [422, 229, -856],
+        "dimension": "overworld",
+        "id": 30
+    },
+    {
+        "name": "Bone Meal Farm",
+        "coords": [373, 67, -1007],
+        "dimension": "overworld",
+        "id": 31
+    },
+    {
+        "name": "Flowers Farms",
+        "coords": [-1983, 87, 5085],
+        "dimension": "overworld",
+        "id": 32
+    },
+    {
+        "name": "Blaze Farm",
+        "coords": [-152, 52, 309],
+        "dimension": "nether",
+        "id": 33
+    }
+]

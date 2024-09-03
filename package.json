@@ -1,0 +1,21 @@
+{
+  "name": "bot_aurum",
+  "version": "1.0.0",
+  "description": "Discord Bot for aurum server",
+  "main": "bot.js",
+  "scripts": {
+    "dev": "nodemon bot.js",
+    "start": "bot.js"
+  },
+  "author": "BanKing",
+  "license": "ISC",
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "bot_aurum": "file:",
+    "discord.js": "^14.16.1",
+    "dotenv": "^16.4.5",
+    "glob": "^8.0.3",
+    "mongoose": "^8.3.3",
+    "nodemon": "^3.1.0"
+  }
+}

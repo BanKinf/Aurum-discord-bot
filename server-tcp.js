@@ -73,7 +73,7 @@ client.once('ready', () => {
 
 // Manage Bot Data Function
 async function handlePlayerData(playerInfo) {
-    const { action, name, dimension, coords, uuid } = playerInfo;
+    const { action, name, dimension, coords, uuid, name_player_executor } = playerInfo;
 
     try {
         if (action === "joined") {
@@ -95,6 +95,7 @@ async function handlePlayerData(playerInfo) {
                 uuid: uuid,
                 action: action,
                 dimension: botDimension,
+                player_executor: name_player_executor,
                 coords: coordinates,
                 botNearFarm: botNearFarm,
                 farmName: botNearFarm ? farmName : null

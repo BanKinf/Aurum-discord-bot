@@ -6,6 +6,7 @@ const BotSchema = new Schema({
     uuid: { type:String, require:true },
     coords:{ type:Array, require:true },
     action: {type:String, require:true},
+    player_executor: {type:String, require:true},
     dimension: {type:String, require:true},
     botNearFarm: {type:Boolean, require:true},
     farmName: {type:String},

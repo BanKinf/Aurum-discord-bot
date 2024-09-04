@@ -10,7 +10,7 @@ const capitalizeWord = require("../../Functions/capitalizeWord")
 
 function generateDescription(botRes) {
     const locationString = botRes.botNearFarm === false ?
-    `${formatCoordinates(botRes.coords)}\nen el ${capitalizeWord(botRes.dimension)}` :
+    `${formatCoordinates(botRes.coords)}\nen el **${capitalizeWord(botRes.dimension)}**` :
     `**${botRes.farmName}** (${capitalizeWord(botRes.dimension)})`;
     
     return `El bot ${botRes.name} está en: \n${locationString} \nhace **${elapsedTimeCalculate(botRes.createdAt)}**`;
@@ -53,12 +53,13 @@ module.exports = {
             if (botRes) {
                 const embed = new EmbedBuilder()
                 .setColor(`E4D028`)
-                .setTitle(`Status del bot ${botRes.name}`)
+                .setTitle(`Status: ${botRes.name}`)
                 .setDescription(generateDescription(botRes))
-                .setImage(`https://nmsr.nickac.dev/fullbody/${botRes.uuid}`)
+                .addFields({ name: 'Spawneado por:', value: `${botRes.player_executor}`})
+                .setThumbnail(`https://nmsr.nickac.dev/face/${botRes.uuid}`)
                 .setFooter({
                     text: `${guild.name}`,
-                    iconURL: 'https://goo.su/Hxmn'
+                    iconURL: 'https://media.discordapp.net/attachments/1044078726553546852/1237291324634435625/4f4514e835d19dd0338e78d550a1d5f5.jpg?ex=66d8a817&is=66d75697&hm=7db4239cc44e71c96d6bc2c5572bf6d3951ac6aff45e49a87fa43248a642fa00&=&format=webp&width=72&height=72'
                 })
                 .setTimestamp()
                 return interaction.reply({embeds: [embed]});

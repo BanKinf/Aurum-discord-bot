@@ -55,7 +55,7 @@ module.exports = {
                 .setColor(`E4D028`)
                 .setTitle(`Status: ${botRes.name}`)
                 .setDescription(generateDescription(botRes))
-                .addFields({ name: 'Spawneado por:', value: `${botRes.player_executor}`})
+                .addFields({ name: 'Spawneado por:', value: `\`${botRes.player_executor}\``})
                 .setThumbnail(`https://nmsr.nickac.dev/face/${botRes.uuid}`)
                 .setFooter({
                     text: `${guild.name}`,

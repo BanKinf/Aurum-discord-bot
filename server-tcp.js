@@ -21,7 +21,7 @@ const shortString = require('./Functions/shortString.js');
 
 // Import Files
 const { loadEvents } = require("./Handlers/eventHandler.js");
-require('./db.js')();
+require('./database/db.js')();
 
 // Const
 const channelId = process.env.BOT_CHANNEL;
@@ -67,7 +67,7 @@ client.once('ready', () => {
 
     // Listen Port
     server.listen(port, '0.0.0.0', () => {
-        console.log(`Servidor escuchando en pvs.cranky.do:${port}`);
+        console.log(`Servidor escuchando en el purto: ${port}`);
     });
 });
 

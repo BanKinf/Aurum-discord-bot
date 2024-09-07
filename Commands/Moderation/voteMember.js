@@ -12,10 +12,11 @@ module.exports = {
                 .setRequired(true)
         ),
 
-    execute(interaction, client) {
+    async execute(interaction, client) {
         const user = interaction.options.getString("user");
         const channel = client.channels.cache.get('1280358068760346635');
-        channel.send({
+
+        const pollMessage = await channel.send({
             poll: {
                 question: { text:`Votación para Miembro: ${user} `},
                 answers: [
@@ -24,10 +25,14 @@ module.exports = {
                     { text: "No", emoji: "❌" },
                 ],
                 allowMultiselect: false,
-                duration: 120,
+                duration: 168,
                 layoutType: PollLayoutType.Default
             }
         })
+        await pollMessage.startThread({
+            name: `Aportes - ${user}`,
+            autoArchiveDuration:10080,
+        });
     },
 };
 

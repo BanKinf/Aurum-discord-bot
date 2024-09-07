@@ -104,15 +104,15 @@ async function handlePlayerData(playerInfo) {
             await newBot.save();
 
             await sendDiscordMessage(`Se ha conectado el bot ${name}`, botNearFarm ?
-                `El bot ${name} está en: **${farmName}** (${capitalizeWord(botDimension)})` :
-                `El bot ${name} está en: \n${formatCoordinates(coordinates)}\nen el **${capitalizeWord(botDimension)}**`, true);
+                `El bot ${name} está en: \n**${farmName}** (${capitalizeWord(botDimension)}) \nSpawneado por:\n\`${name_player_executor}\`` :
+                `El bot ${name} está en: \n${formatCoordinates(coordinates)}\nen el **${capitalizeWord(botDimension)}** \nSpawneado por:\n\`${name_player_executor}\``, true);
         } else {
             const deletedBot = await Bot.findOneAndDelete({ uuid: uuid });
             if (deletedBot) {
                 const { name, dimension, coords, botNearFarm, farmName } = deletedBot;
                 await sendDiscordMessage(`Se ha desconectado el bot ${name}`, botNearFarm ?
-                    `El bot ${name} estaba en: **${farmName}** (${capitalizeWord(dimension)})` :
-                    `El bot ${name} estaba en: \n${formatCoordinates(coords)}\nen el **${capitalizeWord(dimension)}**`, false);
+                    `El bot ${name} estaba en: \n**${farmName}** (${capitalizeWord(dimension)}) \nDesconectado por:\n\`${name_player_executor}\`` :
+                    `El bot ${name} estaba en: \n${formatCoordinates(coords)}\nen el **${capitalizeWord(dimension)}** \nDesconectado por:\n\`${name_player_executor}\``, false);
             }
         }
     } catch (e) {
